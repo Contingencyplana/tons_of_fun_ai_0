@@ -5,6 +5,7 @@
   "workspace": "tons_of_fun_ai_0",
   "status": "completed",
   "timestamp_submitted": "2025-11-12T09:14:04.481932+00:00",
+  "created_at": "2025-11-12T09:14:04.481932+00:00",
   "summary": "Genesis spin-up completed (hello report).",
   "artifacts": {
     "runbook": "RUNBOOK.md",
