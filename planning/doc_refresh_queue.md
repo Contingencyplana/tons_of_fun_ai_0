@@ -23,6 +23,7 @@
 ## Notes
 
 - Treat the list as rolling; append new targets when pivots open.
+- 2025-11-14 - TONS-of-FUN ledger/doc-refresh note: War Office relocated the shared queue file to `planning/commonwealth_loop/doc_refresh_queue.md`; make sure ledger entries and references point to the new path.
 - Use smaller pull requests per work block to keep review pace manageable.
 - Coordinate with Toyfoundry/Toysoldiers when documentation impacts their operational runbooks.
 - Next target: refresh `war_office/README.md` with the doc queue summary and Pivot Five crosslinks.
