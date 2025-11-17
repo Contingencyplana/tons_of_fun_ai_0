@@ -15,6 +15,7 @@
 | P2 | `new_major_pivots/new_major_pivot_2.md` | Capture overlay progress, telemetry hooks, and Order 045 plan | Done 2025-11-09 | High Command | ✅ Progress log aligned with Orders 044/045; revisit after overlay slice evidence lands. |
 | P2 | `planning/pivotal_fronts/ops.md` | Fold in Order 045 trace parity guardrails + offline cadence reminders | Done 2025-11-10 | High Command | ✅ Added trace parity guardrail, refreshed heartbeat/sync checklist, logged in ledger. |
 | P2 | `exchange/attachments/guides/comfort_happy_path.md` | Weave Pivot Seven Outlands links into comfort loop references | Done 2025-11-10 | High Command | ✅ Added Outlands index reference, linked framework + guardian protocol, created shared index stub. |
+| P3 | `docs/daily_doc_refresh.md` | Capture TONS-of-FUN doc-refresh cadence + ledger requirements | Done 2025-11-17 | tons_of_fun_ai_0 | Codified initial cadence; prep `planning/workspaces/tons_of_fun_ai_0/RUNBOOK.md` alignment next. |
 
 ## Working Norms
 
@@ -30,11 +31,12 @@
 
 ## Next Target Candidate
 
-- 2025-11-12 - ✅ Staged Nightlands duet scoreboard placeholder composites and wired into `exchange/attachments/guides/nightlands_duet_playtest_packet.md`; metadata lives in `exchange/attachments/media/nightlands_duet/` (Order 050).
-- 2025-11-13 - ✅ Promoted Nightlands duet telemetry into `exchange/attachments/telemetry/nightlands_duet/nightlands_duet_storyboard_sync_feed.jsonl`, published `docs/nightlands_duet_telemetry_panel.md`, and updated manifests + scope docs (Order 051).
+- 2025-11-12 - ? Staged Nightlands duet scoreboard placeholder composites and wired into `exchange/attachments/guides/nightlands_duet_playtest_packet.md`; metadata lives in `exchange/attachments/media/nightlands_duet/` (Order 050).
+- 2025-11-13 - ? Promoted Nightlands duet telemetry into `exchange/attachments/telemetry/nightlands_duet/nightlands_duet_storyboard_sync_feed.jsonl`, published `docs/nightlands_duet_telemetry_panel.md`, and updated manifests + scope docs (Order 051).
 - 2025-11-12 - Promote duet session metrics into the shared telemetry dashboard and document the dashboard hook in `planning/alfa_zero_nightlands_duet_storyboard.md`.
 - 2025-11-12 - Review `planning/alfa_zero_targeted_sync_scope.md` once targeted sync log rotation lands (pending tooling slice).
 - 2025-11-10 - Evaluate propagating `trace_id` through `golf_00/delta_00/alfa_00/overlay_bridge.py` into payload extensions for cross-pipeline correlation; document toggle and evidence sinks. *(Completed 2025-11-10 via Order 045 trace parity refresh; future tweaks will spin as new entries as needed.)*
+- 2025-11-17 - Align `planning/workspaces/tons_of_fun_ai_0/RUNBOOK.md` with the new Daily Doc Refresh cadence once initial guide stabilizes.
 
 ## Recently Completed
 
