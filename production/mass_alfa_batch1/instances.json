@@ -1,0 +1,35 @@
+{
+  "batch": "mass_alfa_batch1",
+  "generated_at": "2025-11-18T12:04:00Z",
+  "baseline_tag": "forge-alfa@2025-11-13-054",
+  "source_order": "order-2025-11-13-054",
+  "instances": [
+    {
+      "id": "alfa-m03",
+      "codename": "Alfa M03",
+      "workspace": "tons_of_fun_ai_0",
+      "role": "Zeta",
+      "status": "hydrated",
+      "hydrated_at": "2025-11-18T12:04:00Z",
+      "paths": {
+        "workspace_slot": "golf_00/delta_00/alfa_03",
+        "manifest": "production/mass_alfa_batch1/alfa_m03/README.md",
+        "telemetry": "production/mass_alfa_batch1/alfa_m03/logs/readiness.json",
+        "baseline": "production/mass_alfa_batch1/baseline.md"
+      },
+      "logs": {
+        "readiness": "logs/mass_alfa_batch1/Alfa-M03/ops_readiness.json",
+        "exchange": "logs/mass_alfa_batch1/Alfa-M03/exchange_all.json"
+      },
+      "exchange": {
+        "ack": "outbox/acks/order-2025-11-14-057-ack.json",
+        "report": "outbox/reports/order-2025-11-14-057-report.json",
+        "hello": "outbox/reports/hello-Alfa-M03-20251118T120400Z.json"
+      },
+      "notes": [
+        "Baseline pulled from toyfoundry_ai_0/production/mass_alfa_batch1 (forge-alfa@2025-11-13-054).",
+        "Logs copied to logs/mass_alfa_batch1/Alfa-M03/ for exchange evidence."
+      ]
+    }
+  ]
+}
