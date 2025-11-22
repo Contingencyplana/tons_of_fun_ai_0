@@ -15,7 +15,8 @@ Operator Loop (per playtest)
 - Log: append metrics and excerpts under `logs/playtests/`
 
 Evidence
-- Heartbeat/sync: tools outputs saved under `logs/ops_readiness.txt`
+- Hybrid cadence: `python tools/end_of_block.py` (outputs `logs/ops_readiness.json`, `logs/exchange_all.json`; `exchange_all.py` is sync-only)
+- Smoke check: `python tools/factory_order_emitter.py --help` when verifying wiring
 - Contract/overlay smoke outputs: `logs/contract_tests/`
 - Playtest feedback: `logs/playtests/<YYYYMMDD>_session.jsonl`
 

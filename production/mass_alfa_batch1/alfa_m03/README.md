@@ -8,14 +8,14 @@
 
 ## Status
 - 2025-11-18T12:02Z - Pulled Toyfoundry's frozen baseline into the local `production/mass_alfa_batch1/` tree.
-- 2025-11-18T12:03Z - Copied readiness + exchange smoke outputs (`logs/ops_readiness.json`, `logs/exchange_all.json`) into `logs/mass_alfa_batch1/Alfa-M03/`.
+- 2025-11-18T12:03Z - Copied readiness + exchange sync outputs (`logs/ops_readiness.json`, `logs/exchange_all.json`) into `logs/mass_alfa_batch1/Alfa-M03/`.
 - 2025-11-18T12:04Z - Staged acknowledgement + hello/factory reports for Order 057; waiting on hub sync window.
 
 ## Evidence
 - `logs/readiness.json` - Source readiness snapshot from the Toyfoundry freeze.
 - `logs/smoke.txt` - Minimal smoke reference taken during the factory seed.
 - `../../logs/mass_alfa_batch1/Alfa-M03/ops_readiness.json` - Local readiness rerun inside tons_of_fun_ai_0.
-- `../../logs/mass_alfa_batch1/Alfa-M03/exchange_all.json` - Exchange smoke rerun (hub path `C:\Users\Admin\high_command_exchange`).
+- `../../logs/mass_alfa_batch1/Alfa-M03/exchange_all.json` - Exchange sync rerun (hub path `C:\Users\Admin\high_command_exchange`).
 - `../../outbox/reports/hello-Alfa-M03-20251118T120400Z.json` - Hello report bridging readiness + lore focus.
 
 ## Next Steps

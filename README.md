@@ -4,11 +4,14 @@ Genesis workspace scaffold.
 
 - Purpose: see RUNBOOK.md
 - Exchange path: set SHAGI_EXCHANGE_PATH locally
-- Ops: run heartbeat/sync via High Command tools until local wrappers exist
+- Ops cadence: `python tools/end_of_block.py` (heartbeat → offline sync → ops readiness → exchange_all)
+- Smoke: `python tools/factory_order_emitter.py --help` (emitter-based; exchange_all is sync-only)
 
 ## Python commands
+- Hybrid cadence: `python tools/end_of_block.py`
 - Readiness: `python -m tools.ops_readiness`
 - Exchange (validate + sync): `python tools/exchange_all.py`
+- CLI smoke wiring: `python tools/factory_order_emitter.py --help`
 
 ## Exchange (shared hub)
 - Set hub path: `$env:SHAGI_EXCHANGE_PATH = 'C:\\Users\\Admin\\high_command_exchange'`

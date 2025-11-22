@@ -19,7 +19,7 @@
 
 - Aggregate readiness sweep: `./tools/run_all_checks.ps1`.
 - Validate staged JSON before syncing: `./tools/validate_staged_json.ps1`.
-- Exchange smoke (requires hub path): `python tools/exchange_all.py`.
+- Emitter smoke (CLI wiring): `python tools/factory_order_emitter.py --help`.
 - Capture outputs in `logs/` and reference them in notes or PR descriptions.
 
 ## 4. Working Conventions

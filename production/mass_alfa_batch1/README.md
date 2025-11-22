@@ -6,7 +6,7 @@
 ## Execution Snapshot
 1. Mirrored Toyfoundry's `forge-alfa@2025-11-13-054` baseline into `production/mass_alfa_batch1/`.
 2. Reserved the Zeta slot for Alfa M03 (`golf_00/delta_00/alfa_03`) and recorded the mapping in `instances.json`.
-3. Re-ran readiness + exchange smoke (`python -m tools.ops_readiness`, `python tools/exchange_all.py`) and copied the outputs to `logs/mass_alfa_batch1/Alfa-M03/`.
+3. Re-ran readiness + exchange sync (`python -m tools.ops_readiness`, `python tools/exchange_all.py`) and copied the outputs to `logs/mass_alfa_batch1/Alfa-M03/`.
 4. Staged the acknowledgement, hello report, and factory completion report for Order 057.
 
 ## Artifact Inventory
