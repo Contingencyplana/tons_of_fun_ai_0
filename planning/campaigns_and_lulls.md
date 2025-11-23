@@ -36,7 +36,22 @@ Evidence: <key files/paths>
 - Document refresh cadence: second-pass daily slices running from `planning/commonwealth_loop/doc_refresh_queue.md`; log updates to `exchange/ledger/2025-11.md` each block.
 - Nightlands playtest: 2025-11-12 cohort (Vega, Lumen, Rook) ran the duet comfort loop; feedback archived in `logs/alfa_zero/play_session_feedback/` with follow-up work queued.
 
-### Lull — UI Overlay Slice
+## Next Campaign Stack (agreed)
+
+- Campaign 1: Core loop + thin UI  10-15 minute co-op loop, single extraction win, minimal battlegrid/observer view + HUD; inputs stay under guardrails; instrument Time-to-Fun, revive cadence, and "one more run?" prompts.
+- Campaign 2: Emoji-first command layer (UI-aligned)  abilities/pings via emoji DSL (quick-cast wheels + textless comms); 90s emoji-only tutorial; UI uses the DSL; track command latency/accuracy.
+- Campaign 3: Battlegrid scenario builder  lightweight encounter authoring (battlegrid + prefab packs), validated exports through cadence to the hub.
+- Execution: small slices, smoke/ledger hooks, rollback toggles; thin UI layered during Campaigns 1-2.
+
+### Campaign 1 - Core Loop + Thin UI (Detailed Plan)
+
+- Goal/non-goal: 10-15 min co-op loop; single extraction win; minimal HUD/battlegrid; avoid sprawling content/bosses this slice.
+- Milestones: M1 core loop prototype (roles, 1-2 enemies, signature abilities gated by guardrails); M2 thin UI/HUD + telemetry hooks (Time-to-Fun, revives, "one more run?"); M3 playtestable slice with smoke/ledger entries and rollback toggles.
+- KPIs: Time-to-Fun, revive cadence, "one more run?" rate; UI/emoji command latency; crash/safety budget adherence.
+- Dependencies/risks: emoji DSL + guardrails in place; perf/safety smoke available; hybrid cadence green; rollback switches; logging to hub.
+- Execution ritual: per-slice cadence (heartbeat  offline sync  ops_readiness  exchange_all), emitter smoke, ledger notes/evidence hooks per milestone.
+
+### Lull - UI Overlay Slice
 
 - Status: Entered stabilization lull following Order 045 closure.
 - Closed anchors: 045 (UI overlay integration), 047 (targeted sync CLI), 048 (storyboard run), 049 (playtest), 050 (scoreboard imagery), 051 (telemetry feed panel).
