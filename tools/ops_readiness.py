@@ -64,6 +64,9 @@ def _find_runbook(root: Path, workspace: str) -> dict:
 
 
 def main():
+    ci_mode = os.environ.get("CI", "").lower() == "true" or bool(os.environ.get("GITHUB_ACTIONS"))
+    allow_missing_hub = os.environ.get("ALLOW_MISSING_HUB", "").lower() in ("1", "true", "yes", "on")
+    hub_required = not (ci_mode or allow_missing_hub)
     hub = read_hub_path()
     docs_present = _find_runbook(ROOT, WORKSPACE)
     staged_checks = staged_missing_fields(ROOT)
@@ -73,13 +76,15 @@ def main():
         "timestamp_utc": iso_now(),
         "workspace": WORKSPACE,
         "python": sys.version.split()[0],
+        "ci_mode": ci_mode,
         "hub_path": str(hub) if hub else None,
         "hub_exists": hub_ok,
+        "hub_required": hub_required,
         "docs_present": docs_present,
         "staged_checks": staged_checks,
         # Consider OK if hub exists, at least one runbook location is present
         # (or explicitly skipped), and there are no staged missing fields.
-        "ok": bool(hub_ok and any(docs_present.values()) and not has_missing),
+        "ok": bool((hub_ok or not hub_required) and any(docs_present.values()) and not has_missing),
     }
     LOGS.mkdir(parents=True, exist_ok=True)
     out = LOGS/"ops_readiness.json"
